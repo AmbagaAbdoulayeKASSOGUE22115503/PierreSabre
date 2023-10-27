@@ -22,6 +22,10 @@ public class Humain {
 		return quantiteArgent;
 	}
 	
+	public void setQuantiteArgent(int quantiteArgent) {
+		this.quantiteArgent = quantiteArgent;
+	}
+	
 	public void direBonjour() {
 		String texte="Bonjour ! Je m’appelle "+nom+"et j’aime boire du "+boissonPreferee;
 		parler(texte);
@@ -29,7 +33,7 @@ public class Humain {
 	}
 
 
-	private void parler(String texte) {
+	protected void parler(String texte) {
 		System.out.println("("+nom+") -"+texte);
 		
 	}
@@ -50,12 +54,9 @@ public class Humain {
 	
 	public void gagnerArgent(int gain){
 		quantiteArgent+=gain;
-		parler(gain+" sous! Je te remercie généreux donateur!");
 	}
 	
 	private void perdreArgent(int perte){
-		quantiteArgent-=perte;
-		parler("J’ai tout perdu! Le monde est trop injuste...");
-		
+		quantiteArgent-=perte;	
 	}
 }
