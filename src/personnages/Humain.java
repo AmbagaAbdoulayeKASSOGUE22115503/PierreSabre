@@ -52,11 +52,11 @@ public class Humain {
 			parler("Je n'ai plus que "+quantiteArgent+" en poche. Je ne peux pas m'offrir "+bien+" à "+prix+" sous.");
 	}
 	
-	public void gagnerArgent(int gain){
+	protected void gagnerArgent(int gain){
 		quantiteArgent+=gain;
 	}
 	
-	private void perdreArgent(int perte){
+	protected void perdreArgent(int perte){
 		quantiteArgent-=perte;	
 	}
 }
