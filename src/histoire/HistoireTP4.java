@@ -12,11 +12,14 @@ public class HistoireTP4 {
 //		humain.acheter("un kimono", 50);
 		
 		Commerçant marco= new Commerçant("Marco",20);
-		marco.direBonjour();
-		marco.seFaireExtorquer();
-		marco.recevoir(15);
-		marco.boire();
+//		marco.direBonjour();
+//		marco.seFaireExtorquer();
+//		marco.recevoir(15);
+//		marco.boire();
 		
+		Yakuza yaku= new Yakuza("Yaku Le Noir","whisky",30,"Warsong");
+		yaku.direBonjour();
+		yaku.extorquer(marco);
 
 	}
 
