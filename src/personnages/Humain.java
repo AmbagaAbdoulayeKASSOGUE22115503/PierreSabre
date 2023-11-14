@@ -5,7 +5,7 @@ public class Humain {
 	private String boissonPreferee;
 	private int quantiteArgent;
 	private int indiceMemoire = 0;
-	private int tailleMaxMemoire = 3;
+	private int tailleMaxMemoire = 30;
 	private Humain[] memoire = new Humain[tailleMaxMemoire];
 
 	public Humain(String nom, String boissonPreferee, int quantiteArgent) {
