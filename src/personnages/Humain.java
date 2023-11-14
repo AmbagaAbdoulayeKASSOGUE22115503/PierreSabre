@@ -22,6 +22,10 @@ public class Humain {
 		return quantiteArgent;
 	}
 
+	public String getBoissonPreferee() {
+		return boissonPreferee;
+	}
+
 	public void setQuantiteArgent(int quantiteArgent) {
 		this.quantiteArgent = quantiteArgent;
 	}
